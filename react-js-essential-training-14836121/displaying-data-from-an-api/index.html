@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YKG39TTKL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3YKG39TTKL');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying data from an API Online Class - React.js Essential Training
+ — Coursedio</title>
+    <meta property="og:title" content="Displaying data from an API Online Class - React.js Essential Training
+">
+    <meta property="og:description" content="React is a great choice for dynamic, data-driven user experiences. Learn how to create browser-based apps and websites with the component-based React.js library.
+">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.coursedio.online/react-js-essential-training-14836121/displaying-data-from-an-api/">
+    <meta property="og:image" content="https://media.licdn.com/dms/image/C560DAQGGuOxgzM9cNg/learning-public-crop_675_1200/0/1652118335302?e=2147483647&v=beta&t=wVMMPmJ5VTaumCMuQruEIODPUmXjHjNssvlhu4SnCBw">
+    <meta property="og:site_name" content="Displaying data from an API Online Class - React.js Essential Training
+">
+    <meta name="description" content="React is a great choice for dynamic, data-driven user experiences. Learn how to create browser-based apps and websites with the component-based React.js library.
+">
+
+    <link rel="canonical" href="https://www.coursedio.online/react-js-essential-training-14836121/displaying-data-from-an-api/">
+    <link rel="icon" href="/static/img/logo.svg">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/main.css?sd=true">
+
+
+
+
+
+
+        <link rel="stylesheet" href="https://vjs.zencdn.net/8.10.0/video-js.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css">
+
+
+
+    <style>
+        .default__button i {
+            font-size: 2rem;
+        }
+        .loading-player {
+            position: absolute;
+            z-index: 9;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .error-message .btn {
+            background-color: #B9382A;
+        }
+        .vjs-theme-forest .vjs-control-bar {
+            background: rgba(0,0,0,0.5);
+            font-size: 0.9rem;
+            padding: 10px;
+            margin-bottom: 0;
+            height: 4em;
+        }
+        .video-item.active .material-icons {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="message-dialog" style="display: none;">
+        <div class="dialog">
+            <div class="dialog-content">
+                <h2>Ad-blocker detected</h2>
+                <p>Looks like you're using adblock. Please consider supporting us by whitelisting coursedio.online</p>
+            </div>
+            <div class="dialog-controls">
+                <a href="https://help.adblockplus.org/hc/en-us/articles/1500002589982-Add-a-website-to-the-allowlist" class="btn btn-primary" target="_blank">Whitelist</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo nav-item"><a href="/" style="font-size: 1.5rem;color: #fff;"><img src="/static/img/logo.svg" alt="Logo"> Coursedio</a></div>
+            <ul>
+                <li class="nav-item"><a href="//browse">Browse</a></li>
+                <li class="nav-item primary"><a href="mailto: tellspidy@gmail.com">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <div class="error-message" id="blocker-message">
+            <span class="msg"><span class="highlight">Heads up!</span> Looks like you're using adblock. Please consider supporting us by whitelisting coursedio.online</span>
+            <a href="https://help.adblockplus.org/hc/en-us/articles/1500002589982-Add-a-website-to-the-allowlist" target="_blank" class="btn btn-primary btn-small">How?</a>
+        </div>
+        <div class="goback" style="display: inline-flex;">
+    <a href="/react-js-essential-training-14836121"
+        style="display: inline-flex; align-items: center;text-decoration: none;color: #222;">
+        <div class="material-icons">arrow_back</div> Go back
+    </a>
+</div>
+
+<p><br></p>
+<script async="async" data-cfasync="false" src="//pl23282027.highcpmgate.com/2c25188b801a80bce927aa1540cd4a61/invoke.js"></script>
+<div id="container-2c25188b801a80bce927aa1540cd4a61"></div>
+<p><br></p>
+<div class="course-details video-details card">
+    <div class="player video-container" style="position: relative;">
+        <!-- <video poster="https://media.licdn.com/dms/image/C560DAQGGuOxgzM9cNg/learning-public-crop_675_1200/0/1652118335302?e=2147483647&v=beta&t=wVMMPmJ5VTaumCMuQruEIODPUmXjHjNssvlhu4SnCBw" src="https://unpkg.com/coursedio-gniniart-gniniart-laitnesse-sj-tcaer-naipa-na-morf-atad-gniyalpsid@1.0.1/video.mp4" data-overlay="2" data-title="Displaying data from an API" data-ckin="default">
+        </video> -->
+
+        <video
+            id="my-video"
+            class="video-js vjs-16-9 vjs-theme-forest"
+            controls
+            preload="auto"
+            width="640"
+            height="264"
+            poster="https://media.licdn.com/dms/image/C560DAQGGuOxgzM9cNg/learning-public-crop_675_1200/0/1652118335302?e=2147483647&v=beta&t=wVMMPmJ5VTaumCMuQruEIODPUmXjHjNssvlhu4SnCBw"
+            data-setup="{}" src="https://unpkg.com/coursedio-gniniart-gniniart-laitnesse-sj-tcaer-naipa-na-morf-atad-gniyalpsid@1.0.1/video.mp4">
+            <track kind="captions" src="https://unpkg.com/coursedio-gniniart-gniniart-laitnesse-sj-tcaer-naipa-na-morf-atad-gniyalpsid@1.0.1/subtitle.srt" srclang="en" label="English" default>
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+        </video>
+    </div>
+
+    <div class="controls">
+
+        <div class="excercise-file-container">
+            <a href="https://unpkg.com/coursedio-gniniart-gniniart-laitnesse-sj-tcaer-excercise@1.0.1/exercise.zip" class="btn btn-primary real-link" target="_blank">
+                <span class="material-icons">file_download</span> Exercise Files
+            </a>
+        </div>
+
+
+        <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" class="btn next-video" style="display: none;">Next Video <span
+                class="material-icons">arrow_forward</span></a>
+        <a href="/react-js-essential-training-14836121/handling-loading-states/" class="btn next-video-real">Next Video <span
+                class="material-icons">arrow_forward</span></a>
+
+    </div>
+
+    <div class="course-details-content">
+        <h1 class="title">Displaying data from an API</h1>
+        <p class="author">with Eve Porcello</p>
+        <p class="description">React is a great choice for dynamic, data-driven user experiences. Learn how to create browser-based apps and websites with the component-based React.js library.</p>
+        <br><br>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/building-modern-user-interfaces-with-react/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Building modern user interfaces with React</p>
+                    <span>46s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/what-you-should-know-before-watching-this-course/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>What you should know before watching this course</p>
+                    <span>33s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/what-is-react/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>What is React?</p>
+                    <span>1m</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/setting-up-chrome-tools-for-react/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Setting up Chrome tools for React</p>
+                    <span>1m 42s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/setting-up-firefox-devtools-for-react/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Setting up Firefox DevTools for React</p>
+                    <span>1m 2s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/working-with-visual-studio-code/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Working with Visual Studio Code</p>
+                    <span>3m 8s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/adding-react-to-your-project/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Adding React to your project</p>
+                    <span>4m 7s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/creating-react-elements/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Creating React elements</p>
+                    <span>1m 1s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/refactoring-elements-using-jsx/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Refactoring elements using JSX</p>
+                    <span>2m 49s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/incorporating-babel/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Incorporating Babel</p>
+                    <span>3m 10s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/working-with-jsx-syntax/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Working with JSX syntax</p>
+                    <span>2m 5s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/creating-a-react-component/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Creating a React component</p>
+                    <span>3m 14s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/adding-component-properties/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Adding component properties</p>
+                    <span>3m 23s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/working-with-lists/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Working with lists</p>
+                    <span>2m 26s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/adding-keys-to-list-items/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Adding keys to list items</p>
+                    <span>3m 14s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/displaying-images-with-react/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Displaying images with React</p>
+                    <span>2m 59s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/using-fragments/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Using fragments</p>
+                    <span>1m 18s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/generating-a-project-with-create-react-app/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Generating a project with Create React App</p>
+                    <span>2m 38s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/touring-a-create-react-app-project/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Touring a Create React App project</p>
+                    <span>4m 24s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/destructuring-arrays-and-objects/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Destructuring arrays and objects</p>
+                    <span>2m 55s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/understanding-the-usestate-hook/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Understanding the useState Hook</p>
+                    <span>4m 1s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/working-with-useeffect/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Working with useEffect</p>
+                    <span>2m 20s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/understanding-the-dependency-array/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Understanding the dependency array</p>
+                    <span>3m 18s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/incorporating-usereducer/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Incorporating useReducer</p>
+                    <span>3m 44s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/working-with-uncontrolled-components/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Working with uncontrolled components</p>
+                    <span>5m</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/creating-controlled-form-elements/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Creating controlled form elements</p>
+                    <span>3m 1s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/building-a-custom-hook/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Building a custom Hook</p>
+                    <span>5m 13s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/choosing-a-form-library/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Choosing a form library</p>
+                    <span>1m 43s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/fetching-data-with-hooks/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Fetching data with Hooks</p>
+                    <span>4m 4s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/displaying-data-from-an-api/" class="video-item active">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Displaying data from an API</p>
+                    <span>2m 39s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/handling-loading-states/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Handling loading states</p>
+                    <span>2m 46s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/fetching-data-with-graphql/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Fetching data with GraphQL</p>
+                    <span>4m 43s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/working-with-render-props/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Working with render props</p>
+                    <span>4m 38s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/installing-react-router-v6/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Installing React Router v6</p>
+                    <span>2m 23s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/configuring-the-router/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Configuring the Router</p>
+                    <span>3m 33s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/incorporating-the-link-component/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Incorporating the Link component</p>
+                    <span>2m 1s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/nesting-links-with-react-router-v6/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Nesting links with React Router v6</p>
+                    <span>2m 29s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/using-create-react-app-as-a-testing-platform/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Using Create React App as a testing platform</p>
+                    <span>1m 1s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/testing-small-functions-with-jest/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Testing small functions with Jest</p>
+                    <span>3m 47s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/introducing-react-testing-library/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Introducing React Testing Library</p>
+                    <span>2m 54s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/testing-events-with-react-testing-library/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Testing events with React Testing Library</p>
+                    <span>5m 23s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/deploying-to-netlify/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Deploying to Netlify</p>
+                    <span>1m 56s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/react-js-essential-training-14836121/next-steps/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Next steps</p>
+                    <span>1m 1s</span>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+<p><br></p>
+<div style="display: flex; align-items:center;justify-content:center;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'b848ca7623ff1aa8a27e722cb5052ae5',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="//www.topcreativeformat.com/b848ca7623ff1aa8a27e722cb5052ae5/invoke.js"></script>
+</div>
+<p><br></p>
+<script>
+    let video = document.querySelector("video");
+    window.onload = function() {
+        video.play();
+    };
+
+    video.addEventListener("error", function() {
+        video.load();
+        video.play();
+    })
+</script>
+    </section>
+
+
+    <footer>
+        <div class="top-border">
+            <svg xmlns="http://www.w3.org/2000/svg" class="color-bar-footer" width="100%" height="3" viewBox="0 0 1441 3" preserveAspectRatio="none">
+                <g fill="none" fill-rule="evenodd">
+                  <rect width="144" height="3" fill="#0B88C3"></rect>
+                  <rect width="144" height="3" x="144" fill="#00D377"></rect>
+                  <rect width="144" height="3" x="288" fill="#00B950"></rect>
+                  <rect width="144" height="3" x="432" fill="#FFD247"></rect>
+                  <rect width="144" height="3" x="576" fill="#FF9800"></rect>
+                  <rect width="144" height="3" x="720" fill="#FF464F"></rect>
+                  <rect width="144" height="3" x="864" fill="#FF82B3"></rect>
+                  <rect width="144" height="3" x="1008" fill="#FF4385"></rect>
+                  <rect width="144" height="3" x="1152" fill="#A47DCC"></rect>
+                  <rect width="145" height="3" x="1296" fill="#875BB5"></rect>
+                </g>
+              </svg>
+        </div>
+
+        <div class="wrap">
+            <div class="footer-section">
+                <div class="f-sec">
+                    <h3>Technology Courses</h3>
+                    <ul>
+                        <li><a href="/search/?q=Cloud Computing">Cloud Computing</a></li>
+                        <li><a href="/search/?q=Data Science">Data Science</a></li>
+                        <li><a href="/search/?q=Database Management">Database Management</a></li>
+                        <li><a href="/search/?q=DevOps">DevOps</a></li>
+                        <li><a href="/search/?q=IT Help Desk">IT Help Desk</a></li>
+                        <li><a href="/search/?q=Mobile Development">Mobile Development</a></li>
+                        <li><a href="/search/?q=Network and System Administration">Network and System Administration</a></li>
+                        <li><a href="/search/?q=Security">Security</a></li>
+                        <li><a href="/search/?q=Software Development">Software Development</a></li>
+                        <li><a href="/search/?q=Web Development">Web Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="f-sec">
+                    <h3>Creative Courses</h3>
+                    <ul>
+                        <li><a href="/search/?q=AEC">AEC</a></li>
+                        <li><a href="/search/?q=Animation and Illustration">Animation and Illustration</a></li>
+                        <li><a href="/search/?q=Audio and Music">Audio and Music</a></li>
+                        <li><a href="/search/?q=Graphic Design">Graphic Design</a></li>
+                        <li><a href="/search/?q=Motion Graphics and VFX">Motion Graphics and VFX</a></li>
+                        <li><a href="/search/?q=Photography">Photography</a></li>
+                        <li><a href="/search/?q=Product and Manufacturing">Product and Manufacturing</a></li>
+                        <li><a href="/search/?q=User Experience">User Experience</a></li>
+                        <li><a href="/search/?q=Visualization and Real-Time">Visualization and Real-Time</a></li>
+                        <li><a href="/search/?q=Web Design">Web Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="f-sec">
+                    <h3>Developer Courses</h3>
+                    <ul>
+                        <li><a href="/search/?q=SQL Database">SQL Database</a></li>
+                        <li><a href="/search/?q=Python Programming">Python Programming</a></li>
+                        <li><a href="/search/?q=Angular">Angular</a></li>
+                        <li><a href="/search/?q=Android Development">Android Development</a></li>
+                        <li><a href="/search/?q=iOS Development">iOS Development</a></li>
+                        <li><a href="/search/?q=Web Development">Web Development</a></li>
+                        <li><a href="/search/?q=Vue.js">Vue.js</a></li>
+                        <li><a href="/search/?q=Front-End Developement">Front-End Developement</a></li>
+                        <li><a href="/search/?q=React">React</a></li>
+                        <li><a href="/search/?q=C++ for Developers">C++ for Developers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>Copyright © 2021 — Coursedio</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+
+
+        <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+        <script src="/static/js/earnings.js"></script>
+
+
+</body>
+</html>

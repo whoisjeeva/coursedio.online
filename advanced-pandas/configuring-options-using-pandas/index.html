@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YKG39TTKL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3YKG39TTKL');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuring options using pandas Online Class - Advanced Pandas
+ — Coursedio</title>
+    <meta property="og:title" content="Configuring options using pandas Online Class - Advanced Pandas
+">
+    <meta property="og:description" content="Learn the advanced functions in pandas that can help you more effectively work with your data.
+">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.coursedio.online/advanced-pandas/configuring-options-using-pandas/">
+    <meta property="og:image" content="https://media.licdn.com/dms/image/C4E0DAQGHr2hw-z3W_Q/learning-public-crop_675_1200/0/1611880246914?e=2147483647&v=beta&t=LFA72A4DsR6EAy5fdObZSiFu7QVR3OVPO7ixqk8gtqw">
+    <meta property="og:site_name" content="Configuring options using pandas Online Class - Advanced Pandas
+">
+    <meta name="description" content="Learn the advanced functions in pandas that can help you more effectively work with your data.
+">
+
+    <link rel="canonical" href="https://www.coursedio.online/advanced-pandas/configuring-options-using-pandas/">
+    <link rel="icon" href="/static/img/logo.svg">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/main.css?sd=true">
+
+
+
+
+
+
+        <link rel="stylesheet" href="https://vjs.zencdn.net/8.10.0/video-js.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css">
+
+
+
+    <style>
+        .default__button i {
+            font-size: 2rem;
+        }
+        .loading-player {
+            position: absolute;
+            z-index: 9;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .error-message .btn {
+            background-color: #B9382A;
+        }
+        .vjs-theme-forest .vjs-control-bar {
+            background: rgba(0,0,0,0.5);
+            font-size: 0.9rem;
+            padding: 10px;
+            margin-bottom: 0;
+            height: 4em;
+        }
+        .video-item.active .material-icons {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="message-dialog" style="display: none;">
+        <div class="dialog">
+            <div class="dialog-content">
+                <h2>Ad-blocker detected</h2>
+                <p>Looks like you're using adblock. Please consider supporting us by whitelisting coursedio.online</p>
+            </div>
+            <div class="dialog-controls">
+                <a href="https://help.adblockplus.org/hc/en-us/articles/1500002589982-Add-a-website-to-the-allowlist" class="btn btn-primary" target="_blank">Whitelist</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo nav-item"><a href="/" style="font-size: 1.5rem;color: #fff;"><img src="/static/img/logo.svg" alt="Logo"> Coursedio</a></div>
+            <ul>
+                <li class="nav-item"><a href="//browse">Browse</a></li>
+                <li class="nav-item primary"><a href="mailto: tellspidy@gmail.com">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <div class="error-message" id="blocker-message">
+            <span class="msg"><span class="highlight">Heads up!</span> Looks like you're using adblock. Please consider supporting us by whitelisting coursedio.online</span>
+            <a href="https://help.adblockplus.org/hc/en-us/articles/1500002589982-Add-a-website-to-the-allowlist" target="_blank" class="btn btn-primary btn-small">How?</a>
+        </div>
+        <div class="goback" style="display: inline-flex;">
+    <a href="/advanced-pandas"
+        style="display: inline-flex; align-items: center;text-decoration: none;color: #222;">
+        <div class="material-icons">arrow_back</div> Go back
+    </a>
+</div>
+
+<p><br></p>
+<script async="async" data-cfasync="false" src="//pl23282027.highcpmgate.com/2c25188b801a80bce927aa1540cd4a61/invoke.js"></script>
+<div id="container-2c25188b801a80bce927aa1540cd4a61"></div>
+<p><br></p>
+<div class="course-details video-details card">
+    <div class="player video-container" style="position: relative;">
+        <!-- <video poster="https://media.licdn.com/dms/image/C4E0DAQGHr2hw-z3W_Q/learning-public-crop_675_1200/0/1611880246914?e=2147483647&v=beta&t=LFA72A4DsR6EAy5fdObZSiFu7QVR3OVPO7ixqk8gtqw" src="https://unpkg.com/coursedio-1sadnap-decnavda-4sadnap-gnisu-snoitpo-gnirugifnoc@1.0.1/video.mp4" data-overlay="2" data-title="Configuring options using pandas" data-ckin="default">
+        </video> -->
+
+        <video
+            id="my-video"
+            class="video-js vjs-16-9 vjs-theme-forest"
+            controls
+            preload="auto"
+            width="640"
+            height="264"
+            poster="https://media.licdn.com/dms/image/C4E0DAQGHr2hw-z3W_Q/learning-public-crop_675_1200/0/1611880246914?e=2147483647&v=beta&t=LFA72A4DsR6EAy5fdObZSiFu7QVR3OVPO7ixqk8gtqw"
+            data-setup="{}" src="https://unpkg.com/coursedio-1sadnap-decnavda-4sadnap-gnisu-snoitpo-gnirugifnoc@1.0.1/video.mp4">
+            <track kind="captions" src="https://unpkg.com/coursedio-1sadnap-decnavda-4sadnap-gnisu-snoitpo-gnirugifnoc@1.0.1/subtitle.srt" srclang="en" label="English" default>
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+        </video>
+    </div>
+
+    <div class="controls">
+
+        <div class="excercise-file-container">
+            <a href="https://unpkg.com/coursedio-1sadnap-decnavda-excercise@1.0.1/exercise.zip" class="btn btn-primary real-link" target="_blank">
+                <span class="material-icons">file_download</span> Exercise Files
+            </a>
+        </div>
+
+
+        <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" class="btn next-video" style="display: none;">Next Video <span
+                class="material-icons">arrow_forward</span></a>
+        <a href="/advanced-pandas/data-type-conversions-using-pandas/" class="btn next-video-real">Next Video <span
+                class="material-icons">arrow_forward</span></a>
+
+    </div>
+
+    <div class="course-details-content">
+        <h1 class="title">Configuring options using pandas</h1>
+        <p class="author">with Brett Vanderblock</p>
+        <p class="description">Learn the advanced functions in pandas that can help you more effectively work with your data.</p>
+        <br><br>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/take-pandas-to-the-next-level/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Take pandas to the next level</p>
+                    <span>44s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/getting-started-with-pandas/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Getting started with pandas</p>
+                    <span>1m 16s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/intro-to-dataframes-using-pandas/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Intro to DataFrames using pandas</p>
+                    <span>2m 31s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/top-functions-using-pandas/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Top functions using pandas</p>
+                    <span>3m 36s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/configuring-options-using-pandas/" class="video-item active">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Configuring options using pandas</p>
+                    <span>1m 46s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/data-type-conversions-using-pandas/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Data type conversions using pandas</p>
+                    <span>2m 31s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/working-with-strings-using-pandas/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Working with strings using pandas</p>
+                    <span>2m 28s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/working-with-dates-using-pandas/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Working with dates using pandas</p>
+                    <span>3m 8s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/dealing-with-missing-data-using-pandas/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Dealing with missing data using pandas</p>
+                    <span>4m 9s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/apply-map-applymap/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Apply/Map/Applymap</p>
+                    <span>3m 32s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/groupby-and-aggregations-using-pandas/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Groupby and aggregations using pandas</p>
+                    <span>3m 28s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/reshaping-dataframes-pivot-stack/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Reshaping dataframes (pivot, stack)</p>
+                    <span>5m 53s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/merging-merge-join-and-concatenating-concat-dataframes/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Merging (merge, join) and concatenating (concat) dataframes</p>
+                    <span>5m 13s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/mapping-variables-into-groups/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Mapping variables into groups</p>
+                    <span>3m 29s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/plotting-with-pandas/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Plotting with pandas</p>
+                    <span>4m 10s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/correlations-and-statistical-functions/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Correlations and statistical functions</p>
+                    <span>4m 23s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/accelerate-eda-with-pandas-profiling/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Accelerate EDA with pandas-Profiling</p>
+                    <span>3m 50s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/explore-geographic-data-with-geopandas/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Explore Geographic data with Geopandas</p>
+                    <span>2m 57s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/beyond-pandas-with-dask-and-koalas-spark/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Beyond pandas with Dask and Koalas (Spark)</p>
+                    <span>2m 38s</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="video-item-container">
+            <a href="https://www.highcpmgate.com/q2ifbintwp?key=e4e292183a08dd7dbfe327445832a8bb" style="display: none;" class="real-link"></a>
+            <a href="/advanced-pandas/your-path-forward-using-advanced-pandas-functions/" class="video-item">
+                <div class="material-icons">play_circle_filled</div>
+                <div class="video-details">
+                    <p>Your path forward using advanced pandas functions</p>
+                    <span>48s</span>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+<p><br></p>
+<div style="display: flex; align-items:center;justify-content:center;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'b848ca7623ff1aa8a27e722cb5052ae5',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="//www.topcreativeformat.com/b848ca7623ff1aa8a27e722cb5052ae5/invoke.js"></script>
+</div>
+<p><br></p>
+<script>
+    let video = document.querySelector("video");
+    window.onload = function() {
+        video.play();
+    };
+
+    video.addEventListener("error", function() {
+        video.load();
+        video.play();
+    })
+</script>
+    </section>
+
+
+    <footer>
+        <div class="top-border">
+            <svg xmlns="http://www.w3.org/2000/svg" class="color-bar-footer" width="100%" height="3" viewBox="0 0 1441 3" preserveAspectRatio="none">
+                <g fill="none" fill-rule="evenodd">
+                  <rect width="144" height="3" fill="#0B88C3"></rect>
+                  <rect width="144" height="3" x="144" fill="#00D377"></rect>
+                  <rect width="144" height="3" x="288" fill="#00B950"></rect>
+                  <rect width="144" height="3" x="432" fill="#FFD247"></rect>
+                  <rect width="144" height="3" x="576" fill="#FF9800"></rect>
+                  <rect width="144" height="3" x="720" fill="#FF464F"></rect>
+                  <rect width="144" height="3" x="864" fill="#FF82B3"></rect>
+                  <rect width="144" height="3" x="1008" fill="#FF4385"></rect>
+                  <rect width="144" height="3" x="1152" fill="#A47DCC"></rect>
+                  <rect width="145" height="3" x="1296" fill="#875BB5"></rect>
+                </g>
+              </svg>
+        </div>
+
+        <div class="wrap">
+            <div class="footer-section">
+                <div class="f-sec">
+                    <h3>Technology Courses</h3>
+                    <ul>
+                        <li><a href="/search/?q=Cloud Computing">Cloud Computing</a></li>
+                        <li><a href="/search/?q=Data Science">Data Science</a></li>
+                        <li><a href="/search/?q=Database Management">Database Management</a></li>
+                        <li><a href="/search/?q=DevOps">DevOps</a></li>
+                        <li><a href="/search/?q=IT Help Desk">IT Help Desk</a></li>
+                        <li><a href="/search/?q=Mobile Development">Mobile Development</a></li>
+                        <li><a href="/search/?q=Network and System Administration">Network and System Administration</a></li>
+                        <li><a href="/search/?q=Security">Security</a></li>
+                        <li><a href="/search/?q=Software Development">Software Development</a></li>
+                        <li><a href="/search/?q=Web Development">Web Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="f-sec">
+                    <h3>Creative Courses</h3>
+                    <ul>
+                        <li><a href="/search/?q=AEC">AEC</a></li>
+                        <li><a href="/search/?q=Animation and Illustration">Animation and Illustration</a></li>
+                        <li><a href="/search/?q=Audio and Music">Audio and Music</a></li>
+                        <li><a href="/search/?q=Graphic Design">Graphic Design</a></li>
+                        <li><a href="/search/?q=Motion Graphics and VFX">Motion Graphics and VFX</a></li>
+                        <li><a href="/search/?q=Photography">Photography</a></li>
+                        <li><a href="/search/?q=Product and Manufacturing">Product and Manufacturing</a></li>
+                        <li><a href="/search/?q=User Experience">User Experience</a></li>
+                        <li><a href="/search/?q=Visualization and Real-Time">Visualization and Real-Time</a></li>
+                        <li><a href="/search/?q=Web Design">Web Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="f-sec">
+                    <h3>Developer Courses</h3>
+                    <ul>
+                        <li><a href="/search/?q=SQL Database">SQL Database</a></li>
+                        <li><a href="/search/?q=Python Programming">Python Programming</a></li>
+                        <li><a href="/search/?q=Angular">Angular</a></li>
+                        <li><a href="/search/?q=Android Development">Android Development</a></li>
+                        <li><a href="/search/?q=iOS Development">iOS Development</a></li>
+                        <li><a href="/search/?q=Web Development">Web Development</a></li>
+                        <li><a href="/search/?q=Vue.js">Vue.js</a></li>
+                        <li><a href="/search/?q=Front-End Developement">Front-End Developement</a></li>
+                        <li><a href="/search/?q=React">React</a></li>
+                        <li><a href="/search/?q=C++ for Developers">C++ for Developers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>Copyright © 2021 — Coursedio</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+
+
+        <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+        <script src="/static/js/earnings.js"></script>
+
+
+</body>
+</html>
